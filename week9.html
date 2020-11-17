@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      h2{color:red;}
+    </style>
+  </head>
+<body>
+  ASCII對照表<br/>
+  hint:<br>
+  <h3>字元找號碼</h3>
+  ("a").charCodeAt(0)<br/>
+  97<br/>
+  ("xyz").charCodeAt(0)<br/>
+  120<br/>
+  ("xyz").charCodeAt(1)<br/>
+  121<br/>
+  ("xyz").charCodeAt(2)<br/>
+  122<br/>
+  <h3>號碼找字元</h3>
+  String.fromCharCode(97)<br/>
+  
+  <h2>0-127的ASCII</h2>
+<script>
+  for(i=0;i<=127;i++){
+    C=String.fromCharCode(i)
+    document.write(i+""+C+"<br/>")
+  }
+  //userwant是字串
+  userWant=prompt("You are asking")
+  CC=Number.parseInt(userWant) 
+  ccrst=String.fromCharCode(CC)
+  alert(ccrst)
+</script>
+  
+  
+  
+  
+</body>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
