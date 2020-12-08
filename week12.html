@@ -1,0 +1,42 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+    var counter=0;
+    function donkey(){
+       if(counter % 2){
+         img1.src="img/x.jpg"
+       }else{
+         img1.src="img/o.jpg"
+       }
+       counter=counter+1;
+      }
+      function reset(){
+        clearInterval(handle)
+        console.log("你點擊到幾次:"+hitcount)
+      }
+      function restart(){
+        handle=setInterval(donkey,1000)
+      }
+      var hitcount=0;
+      function hit(e){
+        if(e.src="file:///C:/temp/lai1103/img/o.jpg")
+        hitcount=hitcount+1;
+      }
+    </script>
+  <img id="img1" src="img/o.jpg" style="height:80px;wide=80px" onclick="hit(this)">
+  <input type="button" value="開始" onclick="restart()">
+  <input type="button" value="結束" onclick="reset()">
+ 
+  </body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
