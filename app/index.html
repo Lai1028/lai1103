@@ -34,7 +34,8 @@
    scr.value=""
    } 
    function calc(){
-   scr.value=eval(scr.value)
+   x2=eval(scr.value)
+   scr.value=parseFloat(x2.toPrecision(15))
    } 
  
 </script>
