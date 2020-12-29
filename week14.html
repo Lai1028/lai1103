@@ -1,0 +1,23 @@
+<html>
+  <head>
+<script>
+  function calcfv(e){
+    console.log("you click me,and trigger function calcfv")
+    var nump=parseFloat(txtp.value)
+    var numI=parseFloat(txtI.value)
+    var numperiod=parseFloat(txtperiod.value)
+    var rst=nump*Math.pow(1+numI,numperiod)
+    txtRst.value=parseFloat((rst).toprecision(15)).toFixed(2)}
+    
+    
+  }
+</script>
+  </head>
+  <body>
+    本金<input id="txtp"><br/>
+    利率<input id="txtI"><br/>
+    期數<input id="txtperiod"><br/>
+    <input type="button" value="計算"><hr/>
+    終值<input id="txtRst"><br/>
+  </body>
+</html>
